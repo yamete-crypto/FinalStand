@@ -1,34 +1,11 @@
--- AutoBroly Z
-
--- Made by yamete_#3109
-
-
-Move1 = "Meteor Crash"		
-Move2 = "Anger Rush"
-Move3 = "Deadly Dance"
-Move4 = "Wolf Fang Fist"
-Move5 = "Neo Wolf Fang Fist"
-Move6 = "Sweep Kick"
-Move7 = "TS Molotov"
-Move8 = "Vital Strike"
-
-AllowOthers = false			-- true to join with other players
-AutoHit = true
-EarthJoin = false
-
---[[
-
-	This has auto transform, and auto Beans/Jars spam
-						
-	Always check new scripts on alt before using them, because you can get your account banned!
-						
-	I suggest leaving the loadstring and not changing it with the code from the link, so you won't miss any updates
-]]--
-
 if not game:IsLoaded() then
 	game.Loaded:Wait()
 	wait(LoadInTime)
 end
+
+
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -39,10 +16,10 @@ local broly = Instance.new("ImageLabel")
 local pavadinimas = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
 local dc = Instance.new("TextLabel")
-local UICorner_2 = Instance.new("UICorner")
 local planeta = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
 
--- Properties:
+--Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -50,7 +27,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Frame.BackgroundTransparency = 0.800
-Frame.Position = UDim2.new(0.485714287, 0, 0.335543782, 0)
+Frame.Position = UDim2.new(0.515037596, 0, -0.00132623012, 0)
 Frame.Size = UDim2.new(0, 382, 0, 248)
 Frame.Active = true
 Frame.Draggable = true
@@ -59,7 +36,7 @@ dcimage.Name = "dcimage"
 dcimage.Parent = Frame
 dcimage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 dcimage.BackgroundTransparency = 1.000
-dcimage.Position = UDim2.new(0.560448647, 0, 0.793010831, 0)
+dcimage.Position = UDim2.new(0.450500995, 0, 0.793010831, 0)
 dcimage.Size = UDim2.new(0, 39, 0, 34)
 dcimage.Image = "rbxassetid://6807076348"
 
@@ -93,15 +70,12 @@ dc.Parent = Frame
 dc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 dc.BackgroundTransparency = 1.000
 dc.BorderSizePixel = 0
-dc.Position = UDim2.new(0.6806283, 0, 0.793010831, 0)
+dc.Position = UDim2.new(0.570680678, 0, 0.793010831, 0)
 dc.Size = UDim2.new(0, 94, 0, 28)
 dc.Font = Enum.Font.SciFi
 dc.Text = "yamete_#3109"
 dc.TextColor3 = Color3.fromRGB(0, 0, 0)
 dc.TextSize = 14.000
-
-UICorner_2.CornerRadius = UDim.new(0.150000006, 0)
-UICorner_2.Parent = Frame
 
 planeta.Name = "planeta"
 planeta.Parent = Frame
@@ -115,6 +89,11 @@ planeta.Text = "Loading..."
 planeta.TextColor3 = Color3.fromRGB(0, 0, 0)
 planeta.TextSize = 22.000
 planeta.TextWrapped = true
+
+UICorner_2.CornerRadius = UDim.new(0.275000006, 0)
+UICorner_2.Parent = Frame
+
+
 
 
 local CoreGui = game:GetService("StarterGui")
