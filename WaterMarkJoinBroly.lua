@@ -3,7 +3,7 @@
 -------------------Dont steal the script---------------------
 
 _G.AntiLeach = AllowOthers --[false = to go alone to all the autobots and true = so that people can enter with you]--
-_G.GoEarth = EarthJoin --[false = teleportation to Queue and true = teleportation to Earth]--
+_G.GoEarth = EarthJoin--[false = teleportation to Queue and true = teleportation to Earth]--
 _G.ChargeTime = 0 --[select here the loading time to transform, recommended max 3.9]--
 _G.FormType = "g" --[Choose between "g" and "h" depending on the transformation you like]--
 _G.ExtraTime = 2 --[[Time it will take for the script to run (recommended between 2s and 4s to avoid crashes)]]--
