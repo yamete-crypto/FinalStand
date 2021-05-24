@@ -3,16 +3,16 @@
 -------------------Dont steal the script---------------------
 
 _G.AntiLeach = AllowOthers --[false = to go alone to all the autobots and true = so that people can enter with you]--
-_G.GoEarth = EarthJoin--[false = teleportation to Queue and true = teleportation to Earth]--
-_G.ChargeTime = 0 --[select here the loading time to transform, recommended max 3.9]--
-_G.FormType = "g" --[Choose between "g" and "h" depending on the transformation you like]--
+_G.GoEarth = EarthJoin --[false = teleportation to Queue and true = teleportation to Earth]--
+_G.ChargeTime = 3 --[select here the loading time to transform, recommended max 3.9]--
+_G.FormType = "h" --[Choose between "g" and "h" depending on the transformation you like]--
 _G.ExtraTime = 3 --[[Time it will take for the script to run (recommended between 2s and 4s to avoid crashes)]]--
 _G.Dragon = false --[false = dragon crush mode (recommended for low lvl) and true = dragon throw mode (recommended for high lvl)]--
 _G.AutoSenzu = true --[false = do not spam jars or beans and true = if spam jars and beans]--
 _G.AutoPunchFast = true --[recommended if you choose _G.Dragon = true]--
 _G.AutoPunchSlow = false --[recommended if you choose _ G.Dragon = false]--
-_G.StatsAFK = true --[Turn OFF if you dont need autostats - Turn ON if you like autostats]--
-_G.AutoStats = "Phys-Damage" --[[ Phys-Resist, Ki-Max, Health-Max, Ki-Resist, Ki-Damage,Phys-Damage, Speed; all stats ]]--
+_G.StatsAFK = AutoStats --[Turn OFF if you dont need autostats - Turn ON if you like autostats]--
+_G.AutoStats = StatsType --[[ Phys-Resist, Ki-Max, Health-Max, Ki-Resist, Ki-Damage,Phys-Damage, Speed; all stats ]]--
 _G.PetTime = 60 --[waiting time until the pet is used]--
 _G.RejoinTime = 200
 
