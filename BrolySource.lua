@@ -109,7 +109,7 @@ CoreGui:SetCore("SendNotification", {
 if game.PlaceId == 536102540 and EarthJoin == false then
 	planeta.Text = "Teleporting to Queue..."
 	game:GetService("TeleportService"):Teleport(3565304751, game.Players.LocalPlayer)
-elseif game.PlaceId == 3565304751 then
+elseif game.PlaceId == 3565304751 or EarthJoin == true then
 	planeta.Text = "Joining Broly Raid..."
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/yamete-crypto/FinalStand/main/WaterMarkJoinBroly.lua"),true))()
 elseif game.PlaceId == 2050207304 then
