@@ -100,16 +100,20 @@ local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
 	Title = "AutoBroly Z";
 	Text = "Made by yamete_#3109";
-	Duration = 5;})
+	Duration = 10;})
 CoreGui:SetCore("SendNotification", {
-	Title = "Credits";
-	Text = "NabilDr#4888";
-	Duration = 5;})
+	Title = "Discord Server";
+	Text = "discord.gg/scripts";
+	Duration = 10;})
 
-if game.PlaceId == 536102540 and EarthJoin == false then
-	planeta.Text = "Teleporting to Queue..."
-	game:GetService("TeleportService"):Teleport(3565304751, game.Players.LocalPlayer)
-elseif game.PlaceId == 3565304751 or EarthJoin == true then
+if game.PlaceId == 536102540 then
+	if EarthJoin == false then
+		planeta.Text = "Teleporting to Queue..."
+		game:GetService("TeleportService"):Teleport(3565304751, game.Players.LocalPlayer)
+	else
+		planeta.Text = "Joining Broly Raid..."
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/yamete-crypto/FinalStand/main/WaterMarkJoinBroly.lua"),true))()
+elseif game.PlaceId == 3565304751 then
 	planeta.Text = "Joining Broly Raid..."
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/yamete-crypto/FinalStand/main/WaterMarkJoinBroly.lua"),true))()
 elseif game.PlaceId == 2050207304 then
@@ -126,7 +130,7 @@ elseif game.PlaceId == 2050207304 then
 	}
 
 	getgenv().AntiLeech = not AllowOthers
-	getgenv().AutoHit = AutoHit
-	getgenv().TimeUntilRejoin = 400 -- Recommended 350 - 450. (broly world)
+	getgenv().AutoHit = AutoPunch
+	getgenv().TimeUntilRejoin = 400
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/yamete-crypto/FinalStand/main/brolyEngine.lua", true))()
 end
