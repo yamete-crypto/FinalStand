@@ -100,11 +100,11 @@ local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
 	Title = "AutoBroly Z";
 	Text = "Made by yamete_#3109";
-	Duration = 10;})
+	Duration = 15;})
 CoreGui:SetCore("SendNotification", {
 	Title = "Discord Server";
 	Text = "discord.gg/scripts";
-	Duration = 10;})
+	Duration = 20;})
 
 if game.PlaceId == 3565304751 then
 	planeta.Text = "Joining Broly Raid..."
