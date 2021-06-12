@@ -119,7 +119,11 @@ elseif game.PlaceId == 2050207304 then
 		Move5,
 		Move6,
 		Move7,
-		Move8
+		Move8,
+		Move9,
+		Move10,
+		Move11,
+		Move12
 	}
 
 	getgenv().AntiLeech = not AllowOthers
