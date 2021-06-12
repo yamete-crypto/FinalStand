@@ -106,10 +106,7 @@ CoreGui:SetCore("SendNotification", {
 	Text = "discord.gg/scripts";
 	Duration = 10;})
 
-if game.PlaceId == 536102540 then
-	planeta.Text = "Teleporting to Queue..."
-	game:GetService("TeleportService"):Teleport(3565304751, game.Players.LocalPlayer)
-elseif game.PlaceId == 3565304751 then
+if game.PlaceId == 3565304751 then
 	planeta.Text = "Joining Broly Raid..."
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/yamete-crypto/FinalStand/main/WaterMarkJoinBroly.lua"),true))()
 elseif game.PlaceId == 2050207304 then
@@ -129,4 +126,7 @@ elseif game.PlaceId == 2050207304 then
 	getgenv().AutoHit = AutoPunch
 	getgenv().TimeUntilRejoin = 400
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/yamete-crypto/FinalStand/main/brolyEngine.lua", true))()
+else
+	planeta.Text = "Teleporting to Queue..."
+	game:GetService("TeleportService"):Teleport(3565304751, game.Players.LocalPlayer)
 end
